@@ -4,4 +4,7 @@ class PaymentProviderFactory
   end
 
   def debit_card(user) end;
+
+  class Provider end
 end
+

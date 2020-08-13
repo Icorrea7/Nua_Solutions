@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   resources :messages do
     resources :inboxes, only: [:update]
+    resources :payments, only: [:create]
   end
 
 end

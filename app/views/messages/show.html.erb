@@ -6,6 +6,6 @@
   <div class="card-body">
     <p class="card-text"><%= @message.body %></p>
     <%= link_to "Reply", new_message_path(:original_msg => @message.id), class: "btn btn-primary" %>
-    <a href="#" class="btn btn-primary">I've lost my prescription</a>
+    <%= link_to "I've lost my prescription",  messages_path(:message => {:body => "I've lost my script, please issue a new one at a charge of €10", :inbox_id => User.admin.first, :outbox_id => User.current, :payment => TRUE}), :method => :post, class: "btn btn-primary" %>
   </div>
 </div>
