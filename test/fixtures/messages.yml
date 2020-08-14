@@ -1,0 +1,28 @@
+# == Schema Information
+#
+# Table name: messages
+#
+#  id         :integer          not null, primary key
+#  body       :text
+#  read       :boolean          default(FALSE)
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#  inbox_id   :integer
+#  outbox_id  :integer
+#
+# Indexes
+#
+#  index_messages_on_inbox_id   (inbox_id)
+#  index_messages_on_outbox_id  (outbox_id)
+#
+msg:
+  id: 1
+  body: "Hello World"
+  inbox_id: 2
+  outbox_id: 1
+
+msg2:
+  id: 2
+  body: "Hello World"
+  inbox_id: 2
+  outbox_id: 1

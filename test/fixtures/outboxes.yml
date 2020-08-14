@@ -1,0 +1,19 @@
+# == Schema Information
+#
+# Table name: outboxes
+#
+#  id      :integer          not null, primary key
+#  user_id :integer
+#
+# Indexes
+#
+#  index_outboxes_on_user_id  (user_id)
+#
+patient: 
+  id: 1
+  user_id: 1
+
+
+doctor: 
+  id: 2
+  user_id: 2

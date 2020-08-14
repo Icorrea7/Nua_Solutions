@@ -1,0 +1,34 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id         :integer          not null, primary key
+#  first_name :string
+#  is_admin   :boolean          default(FALSE)
+#  is_doctor  :boolean          default(FALSE)
+#  is_patient :boolean          default(TRUE)
+#  last_name  :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+patient:
+  id: 1
+  first_name: "Luke"
+  is_admin: FALSE          
+  is_doctor: FALSE          
+  is_patient: TRUE         
+
+doctor:
+  id: 2
+  first_name: "Leia"
+  is_admin: FALSE          
+  is_doctor: TRUE         
+  is_patient: TRUE                 
+
+admin:
+  id: 3
+  first_name: "Obi-wan"
+  is_admin: TRUE         
+  is_doctor: FALSE          
+  is_patient: FALSE
+
